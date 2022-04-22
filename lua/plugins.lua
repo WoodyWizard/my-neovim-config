@@ -25,24 +25,28 @@ use {
 use {'yamatsum/nvim-nonicons'}
 use {'kyazdani42/nvim-tree.lua'}
 
-use {"akinsho/toggleterm.nvim"}
-
 use {
   'nvim-telescope/telescope.nvim',
   requires = { {'nvim-lua/plenary.nvim'} }
 }
 use { "nvim-telescope/telescope-file-browser.nvim" }
 
-
-use {
-    'numToStr/Comment.nvim',
-    config = function()
-        require('Comment').setup()
-    end
-}
-
 use "oberblastmeister/neuron.nvim"
 use 'nvim-lua/popup.nvim'
+
+use 'nvim-lualine/lualine.nvim'
+
+use {
+	'nvim-treesitter/nvim-treesitter',
+	run = ':TSUpdate'
+}
+    
+    
+    
+use {
+  'romgrk/barbar.nvim',
+  requires = {'kyazdani42/nvim-web-devicons'}
+}
 
 end)
 
