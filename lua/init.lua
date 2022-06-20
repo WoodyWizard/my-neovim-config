@@ -5,8 +5,8 @@ require('setup')
 
 
 
-
-
+require("nvim-lsp-installer").setup {}
+local lspconfig = require("lspconfig")
 
 
 vim.opt.completeopt = {'menu', 'menuone', 'noselect'}
@@ -18,6 +18,12 @@ local luasnip = require 'luasnip'
 
 
 local select_opts = {behavior = cmp.SelectBehavior.Select}
+
+
+lspconfig.sumneko_lua.setup {}
+lspconfig.rust_analyzer.setup {}
+
+
 
 cmp.setup({
   snippet = {
@@ -112,11 +118,9 @@ require'nvim-tree'.setup {
   hijack_netrw        = true,
   open_on_setup       = false,
   ignore_ft_on_setup  = {},
-  auto_close          = false,
   open_on_tab         = false,
   hijack_cursor       = false,
   update_cwd          = false,
-  nvim_tree_highlight_opened_files = true,
   update_to_buf_dir   = {
     enable = true,
     auto_open = true,
@@ -224,8 +228,6 @@ require('lualine').setup()
 cfg = {...}  -- add you config here
 require "lsp_signature".setup(cfg)
 
-
-require('rust-tools').setup({})
 
 
 local map = vim.api.nvim_set_keymap

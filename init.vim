@@ -1,5 +1,4 @@
 call plug#begin('~/.vim/plugged')
-
 	Plug 'simrat39/rust-tools.nvim'
 	Plug 'nvim-lua/popup.nvim'
 	Plug 'nvim-lua/plenary.nvim'
@@ -9,7 +8,6 @@ call plug#begin('~/.vim/plugged')
 	Plug 'EdenEast/nightfox.nvim'
 	Plug 'lervag/wiki.vim'
 	Plug 'rainglow/vim'
-	
 call plug#end()
 
 
@@ -27,6 +25,7 @@ set completeopt=menuone,noinsert,noselect
 :set cursorline
 :set relativenumber
 :set rnu
+:set omnifunc
 set encoding=UTF-8
 let g:wiki_root = '~/wiki'
 set shortmess+=c

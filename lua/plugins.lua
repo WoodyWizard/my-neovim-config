@@ -14,24 +14,19 @@ packer.reset()
 packer.startup(function()
 
 use {
-    'neovim/nvim-lspconfig',
-    opt = true,
-    event = "BufReadPre",
-    wants = { "nvim-lsp-installer" },
-    config = function()
-    	require("config.lsp").setup()
-    end,
-    requires = {
-    "williamboman/nvim-lsp-installer",
-    'hrsh7th/nvim-cmp' ,
-    'hrsh7th/cmp-path',
-    'hrsh7th/cmp-cmdline',
-    'hrsh7th/cmp-buffer',
-    'hrsh7th/cmp-nvim-lsp' ,
-    'saadparwaiz1/cmp_luasnip' ,
-    'L3MON4D3/LuaSnip',
-    },
+    	'neovim/nvim-lspconfig',
+	"williamboman/nvim-lsp-installer",
+	'hrsh7th/nvim-cmp' ,
+	'hrsh7th/cmp-path',
+	'hrsh7th/cmp-cmdline',
+	'hrsh7th/cmp-buffer',
+	'hrsh7th/cmp-nvim-lsp', 
+	'saadparwaiz1/cmp_luasnip', 
+	'L3MON4D3/LuaSnip',
 }
+
+ 
+
 
 use {
   'lewis6991/gitsigns.nvim',
