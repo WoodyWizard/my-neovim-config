@@ -69,11 +69,43 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  LuaSnip = {
+    loaded = true,
+    path = "/home/pam3es/.local/share/nvim/site/pack/packer/start/LuaSnip",
+    url = "https://github.com/L3MON4D3/LuaSnip"
+  },
+  ["barbar.nvim"] = {
+    config = { "\27LJ\2\nJ\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\1K\0\1\0\1\0\1\14animation\1\nsetup\15bufferline\frequire\0" },
+    loaded = true,
+    path = "/home/pam3es/.local/share/nvim/site/pack/packer/start/barbar.nvim",
+    url = "https://github.com/romgrk/barbar.nvim",
+    wants = { "nvim-web-devicons" }
+  },
+  ["cmp-nvim-lsp"] = {
+    loaded = true,
+    path = "/home/pam3es/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
+    url = "https://github.com/hrsh7th/cmp-nvim-lsp"
+  },
+  cmp_luasnip = {
+    loaded = true,
+    path = "/home/pam3es/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
+    url = "https://github.com/saadparwaiz1/cmp_luasnip"
+  },
+  ["dashboard-nvim"] = {
+    loaded = true,
+    path = "/home/pam3es/.local/share/nvim/site/pack/packer/start/dashboard-nvim",
+    url = "https://github.com/glepnir/dashboard-nvim"
+  },
   ["gitsigns.nvim"] = {
     config = { "\27LJ\2\n6\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\rgitsigns\frequire\0" },
     loaded = true,
     path = "/home/pam3es/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
     url = "https://github.com/lewis6991/gitsigns.nvim"
+  },
+  ["lsp_signature.nvim"] = {
+    loaded = true,
+    path = "/home/pam3es/.local/share/nvim/site/pack/packer/start/lsp_signature.nvim",
+    url = "https://github.com/ray-x/lsp_signature.nvim"
   },
   ["lualine.nvim"] = {
     loaded = true,
@@ -85,6 +117,21 @@ _G.packer_plugins = {
     path = "/home/pam3es/.local/share/nvim/site/pack/packer/start/neuron.nvim",
     url = "https://github.com/oberblastmeister/neuron.nvim"
   },
+  ["nvim-cmp"] = {
+    loaded = true,
+    path = "/home/pam3es/.local/share/nvim/site/pack/packer/start/nvim-cmp",
+    url = "https://github.com/hrsh7th/nvim-cmp"
+  },
+  ["nvim-lsp-installer"] = {
+    loaded = true,
+    path = "/home/pam3es/.local/share/nvim/site/pack/packer/start/nvim-lsp-installer",
+    url = "https://github.com/williamboman/nvim-lsp-installer"
+  },
+  ["nvim-lspconfig"] = {
+    loaded = true,
+    path = "/home/pam3es/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
+    url = "https://github.com/neovim/nvim-lspconfig"
+  },
   ["nvim-nonicons"] = {
     loaded = true,
     path = "/home/pam3es/.local/share/nvim/site/pack/packer/start/nvim-nonicons",
@@ -94,6 +141,16 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/pam3es/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",
     url = "https://github.com/kyazdani42/nvim-tree.lua"
+  },
+  ["nvim-treesitter"] = {
+    loaded = true,
+    path = "/home/pam3es/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
+    url = "https://github.com/nvim-treesitter/nvim-treesitter"
+  },
+  ["nvim-web-devicons"] = {
+    loaded = true,
+    path = "/home/pam3es/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
+    url = "https://github.com/kyazdani42/nvim-web-devicons"
   },
   ["plenary.nvim"] = {
     loaded = true,
@@ -118,6 +175,10 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
+-- Config for: barbar.nvim
+time([[Config for barbar.nvim]], true)
+try_loadstring("\27LJ\2\nJ\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\1K\0\1\0\1\0\1\14animation\1\nsetup\15bufferline\frequire\0", "config", "barbar.nvim")
+time([[Config for barbar.nvim]], false)
 -- Config for: gitsigns.nvim
 time([[Config for gitsigns.nvim]], true)
 try_loadstring("\27LJ\2\n6\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\rgitsigns\frequire\0", "config", "gitsigns.nvim")
