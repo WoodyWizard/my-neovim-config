@@ -69,6 +69,37 @@ use {
 
 use {'glepnir/dashboard-nvim'}
 
+use {"akinsho/toggleterm.nvim", tag = 'v1.*', config = function()
+  require("toggleterm").setup()
+end}
+
+
+use {
+    "nvim-neorg/neorg",
+    config = function()
+        require('neorg').setup {
+
+        }
+    end,
+}
+
+use "savq/melange"
+
+use({
+    'rose-pine/neovim',
+    as = 'rose-pine',
+    tag = 'v1.*',
+})
+
+
+use {
+    'numToStr/Comment.nvim',
+    config = function()
+        require('Comment').setup()
+    end
+}
+
+
 end)
 
 
