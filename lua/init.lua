@@ -20,10 +20,11 @@ local luasnip = require 'luasnip'
 local select_opts = {behavior = cmp.SelectBehavior.Select}
 
 
-lspconfig.sumneko_lua.setup {}
 lspconfig.rust_analyzer.setup {}
+lspconfig.sumneko_lua.setup {}
 lspconfig.pyright.setup {}
-
+lspconfig.gopls.setup {}
+lspconfig.ccls.setup {}
 
 
 cmp.setup({
@@ -124,10 +125,6 @@ require'nvim-tree'.setup {
   open_on_tab         = false,
   hijack_cursor       = false,
   update_cwd          = false,
-  update_to_buf_dir   = {
-    enable = true,
-    auto_open = true,
-  },
   diagnostics = {
     enable = false,
     icons = {
@@ -156,11 +153,8 @@ require'nvim-tree'.setup {
     timeout = 500,
   },
   view = {
-    width = 40,
-    height = 30,
     hide_root_folder = false,
     side = 'left',
-    auto_resize = true,
     mappings = {
       custom_only = false,
       list = {}
@@ -275,7 +269,7 @@ map('n', '<Space>bw', '<Cmd>BufferOrderByWindowNumber<CR>', opts)
 
 
 
-require("toggleterm").setup{}
+-- require("toggleterm").setup{}
 
 
 
@@ -294,7 +288,7 @@ require('neorg').setup {
 }
 
 
-require('rust-tools').setup({})
+-- require('rust-tools').setup({})
 
 
 require('Comment').setup()

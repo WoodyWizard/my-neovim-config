@@ -13,8 +13,15 @@ packer.reset()
 
 packer.startup(function()
 
+-- use {
+--   'nvim-lualine/lualine.nvim',
+--   requires = {'kyazdani42/nvim-web-devicons', opt = true}
+-- }
+
+
 use {
     	'neovim/nvim-lspconfig',
+	-- 'simrat39/rust-tools.nvim',
 	"williamboman/nvim-lsp-installer",
 	'hrsh7th/nvim-cmp' ,
 	'hrsh7th/cmp-path',
@@ -56,12 +63,9 @@ use {
 }
     
     
-use {'romgrk/barbar.nvim', config = function() require'bufferline'.setup{animation = false} end, wants = 'nvim-web-devicons'}
+use {'romgrk/barbar.nvim', config = function() require'bufferline'.setup{animation = false} end}
 
-use {
-  'nvim-lualine/lualine.nvim',
-  requires = {'kyazdani42/nvim-web-devicons', opt = true}
-}
+
 
 use {
   "ray-x/lsp_signature.nvim",
@@ -69,9 +73,9 @@ use {
 
 use {'glepnir/dashboard-nvim'}
 
-use {"akinsho/toggleterm.nvim", tag = 'v1.*', config = function()
-  require("toggleterm").setup()
-end}
+-- use {"akinsho/toggleterm.nvim", tag = 'v1.*', config = function()
+--   require("toggleterm").setup()
+-- end}
 
 
 use {

@@ -11,6 +11,8 @@ call plug#begin('~/.vim/plugged')
 	Plug 'rainglow/vim'
 	Plug 'alaviss/nim.nvim'
 	Plug 'prabirshrestha/asyncomplete.vim'
+	Plug 'nvim-lualine/lualine.nvim'
+	Plug 'kyazdani42/nvim-web-devicons'
 call plug#end()
 
 
