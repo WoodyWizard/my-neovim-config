@@ -78,15 +78,6 @@ use {'glepnir/dashboard-nvim'}
 -- end}
 
 
-use {
-    "nvim-neorg/neorg",
-    config = function()
-        require('neorg').setup {
-
-        }
-    end,
-}
-
 use "savq/melange"
 
 use({

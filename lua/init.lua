@@ -21,10 +21,13 @@ local select_opts = {behavior = cmp.SelectBehavior.Select}
 
 
 lspconfig.rust_analyzer.setup {}
-lspconfig.sumneko_lua.setup {}
+lspconfig.lua_ls.setup {}
 lspconfig.pyright.setup {}
 lspconfig.gopls.setup {}
 lspconfig.ccls.setup {}
+lspconfig.eslint.setup {}
+lspconfig.jdtls.setup {}
+
 
 
 cmp.setup({
@@ -120,8 +123,6 @@ cmp.setup({
 require'nvim-tree'.setup {
   disable_netrw       = true,
   hijack_netrw        = true,
-  open_on_setup       = false,
-  ignore_ft_on_setup  = {},
   open_on_tab         = false,
   hijack_cursor       = false,
   update_cwd          = false,
@@ -270,24 +271,6 @@ map('n', '<Space>bw', '<Cmd>BufferOrderByWindowNumber<CR>', opts)
 
 
 -- require("toggleterm").setup{}
-
-
-
-require('neorg').setup {
-    load = {
-        ["core.defaults"] = {},
-        ["core.norg.dirman"] = {
-            config = {
-                workspaces = {
-                    work = "~/notes/work",
-                    home = "~/notes/home",
-                }
-            }
-        }
-    }
-}
-
-
 -- require('rust-tools').setup({})
 
 
